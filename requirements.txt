@@ -1,0 +1,12 @@
+# 로컬/참고용 (컨테이너는 Dockerfile에서 설치) — GPU torch는 cu128 인덱스에서.
+# cu124는 Blackwell/RTX50(sm_120) 커널 없음 → "no kernel image available".
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+torch
+qwen-tts
+accelerate
+fastapi
+uvicorn[standard]
+python-multipart
+soundfile
+librosa
+pynvml
